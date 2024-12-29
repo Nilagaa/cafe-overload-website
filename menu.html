@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Cafe Overload</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Cafe Overload Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="menu-section">
+        <h1>Our Menu</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search menu items...">
+        </div>
+		<button id="viewCartBtnTop" class="view-cart-btn">View Cart</button>
+
+        <div class="menu-categories">
+            <h2>Coffee</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/images/coffee/espresso.jfif" alt="Espresso">
+                    <p>Espresso - ₱120</p>
+                    <button class="add-to-cart" data-name="Espresso" data-price="120">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/coffee/capp.jpg" alt="Cappuccino">
+                    <p>Cappuccino - ₱140</p>
+                    <button class="add-to-cart" data-name="Cappuccino" data-price="140">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/coffee/latte.jpg" alt="Latte">
+                    <p>Latte - ₱140</p>
+                    <button class="add-to-cart" data-name="Latte" data-price="140">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/americano.jfif" alt="Americano">
+                    <p>Americano - ₱120</p>
+                    <button class="add-to-cart" data-name="Americano" data-price="120">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/mocha.jfif" alt="Mocha">
+                    <p>Mocha - ₱180</p>
+                    <button class="add-to-cart" data-name="Mocha" data-price="180">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/Macchiato.jpg" alt="Macchiato">
+                    <p>Macchiato - ₱140</p>
+                    <button class="add-to-cart" data-name="Macchiato" data-price="140">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/coldbrew.jfif" alt="Cold Brew">
+                    <p>Cold Brew - ₱150</p>
+                    <button class="add-to-cart" data-name="Cold Brew" data-price="150">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/frap.jpg" alt="Frappuccino">
+                    <p>Frappuccino - ₱190</p>
+                    <button class="add-to-cart" data-name="Frappuccino" data-price="190">Add to Cart</button>
+                </div>
+               <div class="menu-item">
+                    <img src="assets/images/coffee/affo.webp" alt="Affogato">
+                    <p>Affogato - ₱180</p>
+                    <button class="add-to-cart" data-name="Affogato" data-price="180">Add to Cart</button>
+                </div>
+            </div>
+			<h2>Food (Pastries)</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/images/pastries/muffin.jpg" alt="Muffin">
+                    <p>Muffin - ₱60</p>
+                    <button class="add-to-cart" data-name="Muffin" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pastries/brownie.jpg" alt="Brownie">
+                    <p>Brownie - ₱60</p>
+                    <button class="add-to-cart" data-name="Brownie" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pastries/chocolatecake.jpg" alt="Chocolate Cake Slice">
+                    <p>Chocolate Cake Slice - ₱100</p>
+                    <button class="add-to-cart" data-name="Chocolate Cake Slice" data-price="100">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pastries/blueberrycake.jpg" alt="Blueberry Cheesecake">
+                    <p>Blueberry Cheesecake - ₱120</p>
+                    <button class="add-to-cart" data-name="Blueberry Cheesecake" data-price="120">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pastries/appletart.jpg" alt="Apple Tart">
+                    <p>Apple Tart - ₱80</p>
+                    <button class="add-to-cart" data-name="Apple Tart" data-price="80">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pastries/cookie.jpg" alt="Cookie">
+                    <p>Cookie - ₱30</p>
+                    <button class="add-to-cart" data-name="Cookie" data-price="30">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Drinks</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/images/drinks/greentea.jpg" alt="Green Tea">
+                    <p>Green Tea - ₱60</p>
+                    <button class="add-to-cart" data-name="Green Tea" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/drinks/redtea.jpg" alt="Red Iced Tea">
+                    <p>Red Iced Tea - ₱60</p>
+                    <button class="add-to-cart" data-name="Red Iced Tea" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/drinks/fruittea.jpg" alt="Fruit Tea">
+                    <p>Fruit Tea - ₱70</p>
+                    <button class="add-to-cart" data-name="Fruit Tea" data-price="70">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/drinks/coke.jpg" alt="Coca Cola">
+                    <p>Coca Cola - ₱40</p>
+                    <button class="add-to-cart" data-name="Coca Cola" data-price="40">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/drinks/chocolate.jpg" alt="Hot Chocolate">
+                    <p>Hot Chocolate - ₱80</p>
+                    <button class="add-to-cart" data-name="Hot Chocolate" data-price="80">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/drinks/water.png" alt="Water">
+                    <p>Water - ₱20</p>
+                    <button class="add-to-cart" data-name="Water" data-price="20">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Add-Ons</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/images/addon/espresso.jpg" alt="Extra Shot">
+                    <p>Extra Shot (Espresso) - ₱40</p>
+                    <button class="add-to-cart" data-name="Extra Shot" data-price="40">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/addon/whippedcream.jpg" alt="Whipped Cream">
+                    <p>Whipped Cream - ₱20</p>
+                    <button class="add-to-cart" data-name="Whipped Cream" data-price="20">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/addon/almond.jpg" alt="Almond Milk">
+                    <p>Almond Milk - ₱30</p>
+                    <button class="add-to-cart" data-name="Almond Milk" data-price="30">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/addon/oat.jpg" alt="Oat Milk">
+                    <p>Oat Milk - ₱30</p>
+                    <button class="add-to-cart" data-name="Oat Milk" data-price="30">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/addon/cinnamon.jpg" alt="Cinnamon">
+                    <p>Cinnamon - ₱20</p>
+                    <button class="add-to-cart" data-name="Cinnamon" data-price="20">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/addon/chocolate.jpg" alt="Chocolate Drizzle">
+                    <p>Chocolate Drizzle - ₱20</p>
+                    <button class="add-to-cart" data-name="Chocolate Drizzle" data-price="20">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Coffee Beans (250g)</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/images/beans/arabica.jpg" alt="Arabica">
+                    <p>Arabica Beans - ₱500</p>
+                    <button class="add-to-cart" data-name="Arabica Beans" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/beans/robusta.jpg" alt="Robusta">
+                    <p>Robusta Beans - ₱400</p>
+                    <button class="add-to-cart" data-name="Robusta Beans" data-price="400">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/beans/liberica.jpg" alt="Liberica">
+                    <p>Liberica Beans - ₱500</p>
+                    <button class="add-to-cart" data-name="Liberica Beans" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/beans/excelsa.jpg" alt="Excelsa">
+                    <p>Excelsa Beans - ₱700</p>
+                    <button class="add-to-cart" data-name="Excelsa Beans" data-price="700">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/beans/colombian.jpg" alt="Colombian">
+                    <p>Colombian Beans - ₱600</p>
+                    <button class="add-to-cart" data-name="Colombian Beans" data-price="600">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/beans/ethiopian.jpg" alt="Ethiopian">
+                    <p>Ethiopian Beans - ₱500</p>
+                    <button class="add-to-cart" data-name="Ethiopian Beans" data-price="500">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+		<button id="viewCartBtnBottom" class="view-cart-btn">View Cart</button>
+		
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <p>© Powered by Cafe Overload</p>
+        </div>
+        <div class="footer-right">
+            <p>Mon-Fri: 8 AM - 8 PM | Sat: 6 AM - 6 PM</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price, button) {
+			cart.push({ name, price });
+			localStorage.setItem('cart', JSON.stringify(cart));
+			button.classList.add('flash');
+			
+			setTimeout(() => {
+				button.classList.remove('flash');
+			}, 500);
+		}
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+			button.addEventListener('click', function() {
+				const name = this.getAttribute('data-name');
+				const price = parseInt(this.getAttribute('data-price'));
+				addToCart(name, price, this);
+			});
+		});
+
+
+        document.getElementById('viewCartBtnTop').addEventListener('click', function() {
+            window.location.href = 'checkout.html';
+        });
+
+        document.getElementById('viewCartBtnBottom').addEventListener('click', function() {
+            window.location.href = 'checkout.html';
+        });
+        
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            menuItems.forEach(item => {
+                const itemText = item.textContent.toLowerCase();
+                item.style.display = itemText.includes(searchValue) ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
